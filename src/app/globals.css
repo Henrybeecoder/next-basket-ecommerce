@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+* {
+	transition: all 0.3s ease-in-out;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.background-div1 {
+	overflow-y: hidden;
+}
+.background-div2 {
+	overflow-y: hidden;
+}
+
+.lower-div {
+	background: var(--light-background-color, #fff);
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.new-tag {
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.design-better-experience {
+	background: url(../../public/assets/svgs/wall.svg);
+	background-size: cover;
+	padding: 100px 117px;
+}
+
+/* .inner-content {
+  padding: 100px 117px;
+} */
+
+@media screen and (max-width: 768px) {
+	.design-better-experience {
+		height: 40rem;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.design-better-experience {
+		height: 50rem;
+		padding: 10px;
+	}
+}
+
+.footer-button {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.footer-input {
+	border-radius: 5px 0px 0px 5px;
+}
+
+.material-symbols-outlined {
+	overflow-y: hidden;
+}
